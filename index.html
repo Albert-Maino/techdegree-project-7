@@ -15,39 +15,287 @@
             <h1 class=”main-header”>MyApp&trade;</h1>
         </div>
 
-        <div class=”alert” id=”alert”>
-            <img>
+        <div class=”notifications” id=”notifications”>
+            <img class="bell-icon" src="images/icons/icon-bell.svg" alt="bell icon">
         </div>
 
         <div class="user">
-            <img>
+            <img src="images/me.jpg" alt="photo of me">
+            <h3>Albert Maino</h3>
         </div>
     </header>
 
-    <nav>
-        <a>
-        <img>
+    <nav class="main-nav">
+        <img class="icon nav-chosen" src="images/icons/icon-dashboard.svg" alt="dashboard icon">
+        <img class="icon" src="images/icons/icon-members.svg" alt="members icon">
+        <img class="icon" src="images/icons/icon-visits.svg" alt="visits icon">
+        <img class="icon" src="images/icons/icon-settings.svg" alt="settings icon">
     </nav>
 
-    <main>
-        <section class=”traffic”>
+    <main class="dashboard grid">
 
-            <div class=”traffic-header”>
-                <h3>Traffic</h3>
-                <ul class=”traffic-nav”>
-                    <li class=”traffic-nav-link”></li>
-                    <li class=”traffic-nav-link”></li>
-                    <li class=”traffic-nav-link”></li>
-                    <li class=”traffic-nav-link”></li>
+        <section class="grid-item">
+            <h2>Dashboard</h2>
+            <div class="alert"></div>
+        </section>
+
+
+        <section class="grid-item">
+                <div class=”traffic-header”>
+                    <h3>Traffic</h3>
+                    <ul class=”traffic-nav”>
+                        <li class=”traffic-nav-link”>Hourly</li>
+                        <li class=”traffic-nav-link”>Daily</li>
+                        <li class=”traffic-nav-link”>Weekly</li>
+                        <li class=”traffic-nav-link”>Monthly</li>
+                    </ul>
+                </div>
+
+                <div class="line-graph-container">
+                    <div class="line-graph"></div>
+                </div>
+        </section>
+
+
+        <section class="grid-item">
+            <div class="bar-graph-container">
+                <h3>Daily Traffic</h3>
+                <div class="bar-graph"></div>
+            </div>
+        </section>
+
+
+        <section class="grid-item">
+            <div class="circle-graph-container">
+                <h3>Mobile Users</h3>
+
+                <div class="circle-graph"></div>
+                
+                <ul class="Legend">
+                    <img>
+                    <li class="legend-item">Phones</li>
+                    <img>
+                    <li class="legend-item">Tablets</li>
+                    <img>
+                    <li class="legend-item">Desktop</li>
                 </ul>
             </div>
-            
-            <div>
-                
+        </section>
+
+
+        <section class="social-stats grid-item">
+            <h3>Social Stats</h3>
+
+            <div class="twitter">
+                <img class="social-icon" src="images/icons/icon-twitter.svg" alt="twitter icon">
+                <h3>Twitter</h3>
+                <p class="follower-count">10,345</p>
             </div>
 
+            <div class="facebook">
+                <img class="social-icon" src="images/icons/icon-facebook.svg" alt="facebook icon">
+                <h3>Facebook</h3>
+                <p class="follower-count">8,739</p>
+            </div>
+
+            <div class="google">
+                <img class="social-icon" src="images/icons/icon-google-plus.svg" alt="google plus icon">
+                <h3>Google+</h3>
+                <p class="follower-count">2,530</p>
+            </div>
         </section>
+
+
+        <section class="new-members grid-item">
+            <h3>New Members</h3>
+            <div class="member">
+                <img src="images/member-1.jpg" alt="member photo">
+                <p class="name">Victoria Chambers</p>
+                <p class="date">12/25/2020</p>
+                <a class="email" href="mailto: victoria.chambers@example.com">victoria.chambers@example.com</a>
+            </div>
+
+            <div class="member">
+                <img src="images/member-2.jpg" alt="member photo">
+                <p class="name">Dale Byrd</p>
+                <p class="date">12/25/2020</p>
+                <a class="email" href="mailto: dale.byrd@example.com">dale.byrd@example.com</a>
+            </div>
+
+            <div class="member">
+                <img src="images/member-3.jpg" alt="member photo">
+                <p class="name">Dawn Wood</p>
+                <p class="date">12/25/2020</p>
+                <a class="email" href="mailto: dawn.wood@example.com">dawn.wood@example.com</a>
+            </div>
+
+            <div class="member">
+                <img src="images/member-4.jpg" alt="member photo">
+                <p class="name">Dan Oliver</p>
+                <p class="date">12/25/2020</p>
+                <a class="email" href="mailto: dan.oliver@example.com">dan.oliver@example.com</a>
+            </div>
+        </section>
+
+
+        <section class="recent-activity grid-item">
+            <h3>Recent Activity</h3>
+
+            <div class="member">
+                <img src="images/member-1.jpg" alt="member photo">
+                <p class="name">Victoria Chambers</p>
+                <p class="post">commented on YourApp's SEO Tips</p>
+                <p class="time">4 hours ago</p>
+                <p class="arrow"></p>
+            </div>
+
+            <div class="member">
+                <img src="images/member-2.jpg" alt="member photo">
+                <p class="name">Dale Byrd</p>
+                <p class="post">liked the post Facebook's Changes for 2020</p>
+                <p class="time">5 hours ago</p>
+                <p class="arrow"></p>
+            </div>
+
+            <div class="member">
+                <img src="images/member-3.jpg" alt="member photo">
+                <p class="name">Dawn Wood</p>
+                <p class="post">commented on Facebook's Changes for 2020</p>
+                <p class="time">6 hours age</p>
+                <p class="arrow"></p>
+            </div>
+
+            <div class="member">
+                <img src="images/member-4.jpg" alt="member photo">
+                <p class="name">Dan Oliver</p>
+                <p class="post">posted YourApp's SEO Tips</p>
+                <p class="time">1 day ago</p>
+                <p class="arrow"></p>
+            </div>
+        </section>
+
+
+        <section class="message-user grid-item">
+            <h3>Message User</h3>
+
+            <form>
+                <input type="text" placeholder="Search for User" id="members" name="members" list="members-list"></input>
+                <datalist id="members-list">
+                    <option>Victoria Chambers</option>
+                    <option>Dale Byrd</option>
+                    <option>Dawn Wood</option>
+                    <option>Dan Oliver</option>
+                </datalist>
+                <textarea id="message-input" placeholder="Message for User"></textarea>
+                <input type="submit" class="send-button" value="SEND">
+            </form>
+        </section>
+
+
+        <section class="settings grid-item">
+            <h3>Settings</h3>
+
+            <p>Send Email Notifications</p>
+            <input type="checkbox">
+
+            <p>Set Profile to Public</p>
+            <input type="radio">
+
+            <select id="timezone" name="timezone">
+                <option value="none" selected disabled>Select Timezone</option>
+                <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                <option value="America/Managua">(GMT-06:00) Central America</option>
+                <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                <option value="Etc/Greenwich">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+                <option value="Asia/Amman">(GMT+02:00) Amman</option>
+                <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+                <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+                <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+                <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+                <option value="Asia/Baku">(GMT+04:00) Baku</option>
+                <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+                <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+                <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+                <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+                <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+                <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+             </select>
+
+            <button class="save-button">SAVE</button>
+
+            <button class="cancel-button">CANCEL</button>
+        </section>
+    
     </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/graph.js"></script>
 
 </body>
 
