@@ -9,9 +9,45 @@
   }
 
 body {
-  background-color: black;
+  background-color: $secondary;
 }
 
-main {
-  background-color: black;
+header {
+  background-color: $primary;
+  display: flex;
+  padding: 10px;
+}
+
+h1 {
+  display: flex;
+  margin: 10px;
+  margin-left: 20px;
+  width: 65%;
+}
+
+.notifications {
+  display: flex;
+  flex-wrap: wrap;
+  width: 5%;
+}
+
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 25%;
+}
+
+.vertical-line {
+  border-right: solid 1px black;
+  height: 40px;
+  margin: 12px 10px;
+}
+
+h3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
 }
