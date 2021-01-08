@@ -367,13 +367,13 @@ h1 {
 
 .notifications {
   display: flex;
-  flex-wrap: wrap;
   width: 5%;
+  margin: auto 2px;
+  align-items: flex-end;
 }
 
 .user {
   display: flex;
-  flex-wrap: wrap;
   margin: auto;
   margin-left: 20px;
   margin-right: 10px;
@@ -388,8 +388,9 @@ h1 {
 
 h3 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   padding-left: 10px;
+  font-size: 15px;
 }
 
 /* ============================================= */
@@ -399,13 +400,13 @@ h3 {
 /*              Images                           */
 /* ============================================= */
 .bell-icon {
-  width: 26px;
-  height: auto;
+  width: auto;
+  height: 26px;
 }
 
 .profile-pic {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  margin: auto;
+  margin: auto 2px;
 }
